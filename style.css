@@ -130,3 +130,23 @@ footer {
 .language {
   margin-top: 20px;
 }
+button:hover{
+
+transform:scale(1.05);
+opacity:0.85;
+
+}
+
+
+button:active{
+
+transform:scale(0.95);
+
+}
+
+
+a:hover{
+
+text-decoration:underline;
+
+}
