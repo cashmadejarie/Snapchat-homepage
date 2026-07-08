@@ -1,50 +1,56 @@
-function login(){
-
-let username = document.getElementById("username").value;
+import {auth} from "./firebase.js";
 
 
-if(username === ""){
+import {
 
-alert("Please enter your username or email");
+signInWithEmailAndPassword
 
 }
 
-else{
+from
 
-alert("Logging in as: " + username);
-
-}
-
-}
+"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 
 
-function phoneLogin(){
-
-alert("Phone number login selected");
-
-}
+window.login=function(){
 
 
+let email =
+document.getElementById("username").value;
 
-function googleLogin(){
 
-alert("Google login selected");
-
-}
+let password =
+document.getElementById("password").value;
 
 
 
-function signup(){
+signInWithEmailAndPassword(
+auth,
+email,
+password
+)
 
-alert("Opening sign up page");
 
-}
-
+.then(()=>{
 
 
-function message(text){
+alert("Login successful");
 
-alert(text + " clicked");
+
+window.location="home.html";
+
+
+})
+
+
+.catch(()=>{
+
+
+alert("Incorrect email or password");
+
+
+});
+
 
 }
